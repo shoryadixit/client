@@ -46,7 +46,7 @@ export default function CustomDropzone({ setFile }) {
           <div>
             <input {...getInputProps()} />
             <p className="text-sm flex items-center gap-2 text-muted-foreground">
-              <DiDropbox size={"25px"} /> Drag 'n' drop an image here, or click
+              <DiDropbox size={"25px"} /> Drag &apos;n&apos; drop an image here, or click
               to select a file
             </p>
           </div>
