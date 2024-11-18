@@ -22,7 +22,7 @@ export default function Page() {
     setLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:8080/api/getAllCars?search=${encodeURIComponent(
+        `https://server-vczs.onrender.com/api/getAllCars?search=${encodeURIComponent(
           query
         )}`,
         {

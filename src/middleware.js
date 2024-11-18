@@ -16,7 +16,7 @@ export async function middleware(request) {
 
     if (authCookie && isAuthPage) {
       try {
-        const res = await fetch("http://localhost:8080/api/session", {
+        const res = await fetch("https://server-vczs.onrender.com/api/session", {
           method: "POST",
           headers: {
             Cookie: `${authCookie.name}=${authCookie.value}`,

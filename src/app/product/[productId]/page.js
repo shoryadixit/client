@@ -13,7 +13,7 @@ import Image from "next/image";
 export default async function Page({ params }) {
   const authToken = (await cookies()).get("connect.sid");
   const slug = (await params).productId;
-  const res = await fetch(`http://localhost:8080/api/getCar/${slug}`, {
+  const res = await fetch(`https://server-vczs.onrender.com/api/getCar/${slug}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
