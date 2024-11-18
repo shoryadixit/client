@@ -27,7 +27,6 @@ import { MdCancel } from "react-icons/md";
 import toast from "react-hot-toast";
 import { Badge } from "@/components/ui/badge";
 import { Loader2 } from "lucide-react";
-import { set } from "mongoose";
 
 export default function EditForm({ productId }) {
   const [file, setFile] = useState([]);
