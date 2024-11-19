@@ -4,13 +4,14 @@ import { MoveRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export default async function Page() {
-  const res = await fetch("https://server-vczs.onrender.com/api/getAllCars", {
+  const res = await fetch("https://server-vczs.onrender.com/api/getAllCars?search=", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
     },
   });
   const { data } = await res.json();
+  console.log(data);
   return (
     <div>
       <main>
